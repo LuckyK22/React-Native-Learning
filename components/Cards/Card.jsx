@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function Card({color}) {
+export default function Card({color, radius}) {
     return (
-        <View style={[styles.card, {backgroundColor: color}]}>
-            <Text style={styles.cardFont}>{color}</Text>
+        <View style={[styles.card, {backgroundColor: color}, {borderRadius: 999}]}>
+            <Text style={styles.cardFont}>{color.toUpperCase()}</Text>
         </View>
     )
 }
@@ -12,9 +12,9 @@ export default function Card({color}) {
 
 const styles = StyleSheet.create({
     card : {
-        width: 100,
-        height: 100,
-        borderRadius: 10,
+        width: 75,
+        height: 75,
+        margin: 5,
         borderWidth: 4,
         borderColor: "#244388",
         flex: 1,
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     cardFont: {
-        fontSize: 24,
+        fontSize: 14,
         color: '#000000'
     }
 })

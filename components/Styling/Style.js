@@ -1,9 +1,8 @@
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
 
     container: {
-        // width: '100%',
         margin: 10,
     },
     heading: {
@@ -11,4 +10,4 @@ const styles = StyleSheet.create({
     }
 }); 
 
-export { styles }
+export { style }
